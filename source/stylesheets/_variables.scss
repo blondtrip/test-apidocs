@@ -23,22 +23,23 @@ under the License.
 
 // BACKGROUND COLORS
 ////////////////////
-$nav-bg: #2E3336 !default;
-$examples-bg: #2E3336 !default;
-$code-bg: #1E2224 !default;
-$code-annotation-bg: #191D1F !default;
-$nav-subitem-bg: #1E2224 !default;
-$nav-active-bg: #0F75D4 !default;
-$nav-active-parent-bg: #1E2224 !default; // parent links of the current section
-$lang-select-border: #000 !default;
-$lang-select-bg: #1E2224 !default;
+$nav-bg: #1798d0; // bg of left navigation panel #393939
+$examples-bg: #393939;  // bg of right panel for code examples #393939
+$code-bg: #292929;   // bg of the code snippets #292929
+$code-annotation-bg: #1c1c1c;  // bg of "This is the code from..." boxes #1c1c1c
+$nav-subitem-bg: #1798d0; //bg of sub-items when opening on the left navigation panel #262626
+$nav-active-bg: #1e73be; //bg of item being navigated on the left navigation panel #2467af
+$nav-active-parent-bg: #1E2224; // parent links of the current section
+$lang-select-border: #000;
+$lang-select-bg: #222;
 $lang-select-active-bg: $examples-bg !default; // feel free to change this to blue or something
-$lang-select-pressed-bg: #111 !default; // color of language tab bg when mouse is pressed
-$main-bg: #F3F7F9 !default;
-$aside-notice-bg: #8fbcd4 !default;
-$aside-warning-bg: #c97a7e !default;
-$aside-success-bg: #6ac174 !default;
-$search-notice-bg: #c97a7e !default;
+$lang-select-pressed-bg: #111; // color of language tab bg when mouse is pressed
+$main-bg: #eaf2f6;  //main bg (where text content is)
+$aside-notice-bg: #adc5d0; // notice bg (info box in blue) #8fbcd4
+$aside-warning-bg: #c97a7e; // warning bg (info box in red)
+$aside-success-bg: #16ec9b; // success bg (info box in green) #6ac174
+$search-notice-bg: #c97a7e; // no idea where it is (it is red)
+
 
 
 // TEXT COLORS

@@ -1,4 +1,5 @@
-FROM ruby:2.6-slim
+#FROM ruby:2.6-slim
+FROM ruby:alpine
 
 WORKDIR /srv/slate
 
@@ -11,6 +12,8 @@ COPY Gemfile .
 COPY Gemfile.lock .
 
 RUN apt-get update \
+    && apt-get upgrade \
+    && apt-get install -y git \
     && apt-get install -y --no-install-recommends \
         build-essential \
         nodejs \
@@ -18,7 +21,7 @@ RUN apt-get update \
     && bundle install \
     && apt-get remove -y build-essential \
     && apt-get autoremove -y \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* 
 
 COPY . /srv/slate
 
